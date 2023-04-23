@@ -55,13 +55,53 @@ namespace Game
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             Random r = new Random();
-            rnd = r.Next(100,999);
+            rnd = r.Next(100, 999);
             label1.Text = rnd.ToString();
+            label1.Visible = false;
             label2.Text = "Round: " + counter.ToString();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+             Random r = new Random();
+            rnd = r.Next(100, 999);
+            label1.Text = rnd.ToString();
+            label1.Visible = false;
+            label2.Text = "Round: " + counter.ToString();
+
+            {
+                int low = 100;
+                int high = 999;
+                int mid = 0;
+                while (low <= high)
+                {
+                    mid = (low + high) / 2;
+                    listBox1.Items.Add(mid);
+                    if (mid < rnd)
+                    {
+                        low = mid + 1;
+                        MessageBox.Show("Your Guess < this Number - Guess: " + mid.ToString());
+                    }
+                    else if (mid > rnd)
+                    {
+                        high = mid - 1;
+                        MessageBox.Show("Your Guess > this Number - Guess: " + mid.ToString());
+                    }
+                    else
+                    {
+                        MessageBox.Show(" zende baad ");
+                        button1.Enabled = false;
+                        listBox1.Items.Add(mid);
+                        return;
+
+                    }
+                }
+            }
+            
+          
+
         }
     }
 }
