@@ -13,6 +13,8 @@ namespace Game
     public partial class Form1 : Form
     {
         int rnd = 0, counter = 0;
+        int max = 999;
+        int min = 100;
         public Form1()
         {
             InitializeComponent();
@@ -22,9 +24,21 @@ namespace Game
         {
             try
             {
+                int x = (max + min) / 2;
+                if (x > rnd)
+                {
+                    max = x;
+                    x = (max + min) / 2;
+                }
+                else
+                {
+                    min = x;
+                    x = (max + min) / 2;
+                }
+
+                textBox1.Text = x.ToString();
 
                 int input = int.Parse(textBox1.Text);
-                textBox1.Text = "";
                 if (input > 999 || input < 100)
                 {
                     MessageBox.Show("Number is not in range");
