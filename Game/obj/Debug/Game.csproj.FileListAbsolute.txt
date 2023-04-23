@@ -8,3 +8,14 @@ C:\Users\gheir\source\repos\Game\Game\obj\Debug\Game.csproj.GenerateResource.cac
 C:\Users\gheir\source\repos\Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
 C:\Users\gheir\source\repos\Game\Game\obj\Debug\Game.exe
 C:\Users\gheir\source\repos\Game\Game\obj\Debug\Game.pdb
+D:\C# Code\Guess-Number-Game\Game\bin\Debug\Game.exe.config
+D:\C# Code\Guess-Number-Game\Game\bin\Debug\Game.exe
+D:\C# Code\Guess-Number-Game\Game\bin\Debug\Game.pdb
+D:\C# Code\Guess-Number-Game\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+D:\C# Code\Guess-Number-Game\Game\obj\Debug\Game.csproj.SuggestedBindingRedirects.cache
+D:\C# Code\Guess-Number-Game\Game\obj\Debug\Game.Form1.resources
+D:\C# Code\Guess-Number-Game\Game\obj\Debug\Game.Properties.Resources.resources
+D:\C# Code\Guess-Number-Game\Game\obj\Debug\Game.csproj.GenerateResource.cache
+D:\C# Code\Guess-Number-Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+D:\C# Code\Guess-Number-Game\Game\obj\Debug\Game.exe
+D:\C# Code\Guess-Number-Game\Game\obj\Debug\Game.pdb
