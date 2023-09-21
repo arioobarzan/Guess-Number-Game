@@ -62,6 +62,24 @@ namespace Game
             rnd = r.Next(100,999);
             label1.Text = rnd.ToString();
             label2.Text = "Round: " + counter.ToString();
+Int minimum = 100;int maximum = 999,int a = 0;int z = 9;
+Random rd = new Random();
+Int rnd = rd.next(100,999);
+Textbox1.text = rnd.tostring();
+a = (minimum + maximum) / 2;
+Textbox2.text = a.tostring();
+Listbox1.items.Add(Textbox2.text);
+While (a != rnd)
+
+if (a < rnd) {  minimum = a; a = (a + maximum) / 2; }
+if (a > rnd) { maximum = a;  a = (a + minimum) /2; }
+Textbox2.text = a.tostring();
+Listbox1.items.Add(Textbox2.text);
+Z--;Textbox3.text = z.tostring();
+if (a == rnd) { Textbox2.backcolor = color.green; buttons.Enabled = false; }
+
+
+
         }
     }
 }
